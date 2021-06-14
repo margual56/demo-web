@@ -1,0 +1,55 @@
+:root {
+	--dark-bg: #1e1e27;
+	--dark-bg2: #292936;
+	--dark-fg: #ccc;
+
+	--light-bg: white;
+	--light-bg2: #ddd;
+	--light-fg: black;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Ubuntu';
+
+	background-color: var(--light-bg);
+	color: var(--light-fg);
+}
+
+body.dark{
+	background-color: var(--dark-bg);
+	color: var(--dark-fg);
+}
+
+div.navbar {
+	background-color: var(--light-bg2);
+	color: var(--light-fg2);
+
+	display: flex;
+	align-items: flex-start;
+
+	width: 100%;
+}
+
+div.navbar.dark {
+	background-color: var(--dark-bg2);
+	color: var(--dark-fg2);
+}
+
+div.navbar > img.icon {
+	margin: auto;
+	margin-left: 2em;
+	margin-right: 2em;
+
+	max-height: 40px;
+
+	flex-basis: auto;
+}
+
+div.navbar > ul > li {
+	list-style-type: none;
+}
