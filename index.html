@@ -7,30 +7,43 @@
 		<link rel="stylesheet" href="styles/navbar.css">
 		<link rel="stylesheet" href="styles/content.css">
 		<link rel="stylesheet" href="styles/post.css">
+
+		<script>
+			function changetheme(button){
+				let goto_dark = button.id=="moon";
+
+				button.className = "theme";
+				document.getElementById(goto_dark?"sun":"moon").className = "theme active";
+
+				document.getElementById("body").className = goto_dark?"dark":"";
+				document.getElementById("navbar").className = "navbar " + (goto_dark?"dark":"");
+			}
+		</script>
 	</head>
 
-	<body class="dark">
-		<div class="navbar dark">
+	<body id="body" class="">
+		<div id="navbar" class="navbar">
 			<img class="icon" src="resources/placeholder.png">
 			<ul>
 				<li>
-					<a href="/"><img src="resources/home.png"></a>
+					<a href="/"><img src="resources/home_black.png"></a>
 				</li>
 				<li>
-					<a href="/search"><img src="resources/search.png"></a>
+					<a href="/search"><img src="resources/search_black.png"></a>
 				</li>
 				<li>
-					<a href="/notifications"><img src="resources/bell.png"></a>
+					<a href="/notifications"><img src="resources/bell_black.png"></a>
 				</li>
 				<li>
-					<a href="/dms"><img src="resources/message.png"></a>
+					<a href="/dms"><img src="resources/message_black.png"></a>
 				</li>
 				<li>
-					<a href="/profile"><img src="resources/user.png"></a>
+					<a href="/profile"><img src="resources/user_black.png"></a>
 				</li>
 			</ul>
 			
-			<img class="theme" src="resources/sun.png">
+			<img id="moon" class="theme active" src="resources/moon.png" onclick="changetheme(this)">
+			<img id="sun" class="theme" src="resources/sun.png" onclick="changetheme(this)">
 		</div>
 
 		<div class="content">

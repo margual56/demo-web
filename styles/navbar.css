@@ -67,3 +67,15 @@ div.navbar > ul > li img:hover {
 div.navbar > ul > li > img {
 	max-width: 2em;
 }
+
+div.navbar img.theme {
+	display: none;
+}
+
+div.navbar img.theme:hover{
+	cursor: pointer;
+}
+
+div.navbar img.theme.active {
+	display: block;
+}
