@@ -8,6 +8,12 @@ div.navbar {
 	align-items: center;
 	flex-direction: column;
 
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	overflow-x: hidden; /* Disable horizontal scroll */
+
 	height: 100%;
 
 	border-style: solid;
