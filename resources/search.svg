@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="search.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.6654321"
+     inkscape:cx="228.66836"
+     inkscape:cy="549.0667"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g1257"
+       inkscape:export-filename="C:\Users\Marcos\Desktop\demo\resources\search.png"
+       inkscape:export-xdpi="240.89999"
+       inkscape:export-ydpi="240.89999">
+      <rect
+         style="fill:none;stroke:none;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="rect1127"
+         width="26.359371"
+         height="26.359371"
+         x="58.628685"
+         y="136.0304"
+         ry="2.7494054" />
+      <g
+         id="g1233">
+        <circle
+           style="fill:none;stroke-width:2.11666667;stroke-linecap:round;stroke-linejoin:round;stroke:#ffffff;stroke-miterlimit:4;stroke-dasharray:none"
+           id="path846"
+           cx="74.944855"
+           cy="146.51469"
+           r="7.8419118" />
+        <path
+           id="rect1002"
+           style="fill:none;stroke:#ffffff;stroke-width:5.00004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+           d="M 257.49805 568.4043 L 230.36133 594.31836 C 227.80703 596.75743 227.71877 600.77056 230.16406 603.31836 C 232.60935 605.86616 236.63515 605.9547 239.18945 603.51562 L 266.04883 577.86719 A 29.638722 29.638722 0 0 1 257.49805 568.4043 z "
+           transform="scale(0.26458333)" />
+      </g>
+    </g>
+  </g>
+</svg>
