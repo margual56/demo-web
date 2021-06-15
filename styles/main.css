@@ -1,6 +1,6 @@
 :root {
-	--dark-bg: #1e1e27;
-	--dark-bg2: #292936;
+	--dark-bg: #020111;
+	--dark-bg2: #11111b;
 	--dark-fg: #ccc;
 
 	--light-bg: white;
@@ -15,12 +15,17 @@ html, body {
 
 body {
 	font-family: 'Ubuntu';
+	font-size: 1em;
 
 	background-color: var(--light-bg);
 	color: var(--light-fg);
 
 	display: flex;
 	flex-direction: row;
+
+	overflow: hidden;
+
+	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }
 
 body.dark{

@@ -1,5 +1,10 @@
 div.post {
-	border-bottom: 2px solid gray;
+	/*border-bottom: 2px solid gray;
+	border-top: 2px solid gray;*/
+
+	background-color: rgba(255, 255, 255, 0.1);
+
+	margin-bottom: 2em;
 
 	width: 100%;
 	padding: 1em;
@@ -12,7 +17,7 @@ div.post {
 }
 
 div.post:hover {
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.4);
 
 	cursor: pointer;
 }
@@ -28,9 +33,13 @@ div.post > .profile-container {
 }
 
 div.post > .profile-container > img.profile {
+	margin: auto;
+
 	display: inline;
-	height: auto;
+	height: 100%;
 	width: 100%;
+
+	object-fit: cover;
 }
 
 div.post > div.post-content {
@@ -49,5 +58,5 @@ div.post > div.post-content > .username {
 }
 
 div.post > div.post-content > .post-text {
-	max-width: 95%;
+	width: 95%;
 }

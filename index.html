@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="styles/navbar.css">
 		<link rel="stylesheet" href="styles/content.css">
 		<link rel="stylesheet" href="styles/post.css">
+		<link rel="stylesheet" href="styles/scrollbar.css">
 
 		<script>
 			function changetheme(button){
@@ -21,29 +22,29 @@
 		</script>
 	</head>
 
-	<body id="body" class="">
-		<div id="navbar" class="navbar">
+	<body id="body" class="dark">
+		<div id="navbar" class="navbar dark">
 			<img class="icon" src="resources/placeholder.png">
 			<ul>
 				<li>
-					<a href="/"><img src="resources/home_black.png"></a>
+					<a href="/"><img src="resources/home.png"></a>
 				</li>
 				<li>
-					<a href="/search"><img src="resources/search_black.png"></a>
+					<a href="/search"><img src="resources/search.png"></a>
 				</li>
 				<li>
-					<a href="/notifications"><img src="resources/bell_black.png"></a>
+					<a href="/notifications"><img src="resources/bell.png"></a>
 				</li>
 				<li>
-					<a href="/dms"><img src="resources/message_black.png"></a>
+					<a href="/dms"><img src="resources/message.png"></a>
 				</li>
 				<li>
-					<a href="/profile"><img src="resources/user_black.png"></a>
+					<a href="/profile"><img src="resources/user.png"></a>
 				</li>
 			</ul>
 			
-			<img id="moon" class="theme active" src="resources/moon.png" onclick="changetheme(this)">
-			<img id="sun" class="theme" src="resources/sun.png" onclick="changetheme(this)">
+			<img id="moon" class="theme" src="resources/moon.png" onclick="changetheme(this)">
+			<img id="sun" class="theme active" src="resources/sun.png" onclick="changetheme(this)">
 		</div>
 
 		<div class="content">
@@ -64,6 +65,20 @@
 
 			<div class="post">
 				<div class="profile-container">
+					<img class="profile" src="resources/example_profile3.jpg">
+				</div>
+
+				<div class="post-content">
+					<p class="username">@bradkitt</p>
+
+					<div class="post-text">
+						<p>Dude... are u ok??</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="post">
+				<div class="profile-container">
 					<img class="profile" src="resources/example_profile.jpg">
 				</div>
 
@@ -71,7 +86,23 @@
 					<p class="username">@theawesomecat64</p>
 
 					<div class="post-text">
-						<p>Lol what a freak</p>
+						<p>Cras molestie elit est, at interdum nulla fermentum maximus. Etiam in arcu egestas eros porttitor fringilla at in metus. Curabitur nec sollicitudin felis. Vivamus elit eros, rutrum eu lacus viverra, pulvinar volutpat nibh. Morbi dui felis, malesuada vel placerat vel, elementum a metus. Mauris rutrum accumsan laoreet. Duis ut velit porta, elementum nunc ut, molestie sapien. Pellentesque purus nisi, dignissim in luctus eget, tempus at diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eu viverra turpis. Proin eget sem felis. Donec quis sem vel odio posuere semper consequat at risus. Cras molestie tristique risus, in imperdiet ex tristique vel. Duis auctor, sapien et dictum vulputate, eros sem fringilla mi, et sagittis nulla mi congue magna. Suspendisse dictum risus lectus, eget tristique mi cursus sit amet.</p>
+
+						<p>Morbi mi tortor, tempor nec vehicula at, tincidunt ut ipsum. Nunc tempor, enim et consectetur placerat, purus lorem pellentesque metus, quis pharetra ex lectus quis purus. Donec finibus ut odio a varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc et blandit metus, non pharetra dolor. Sed eu fringilla sem. Nulla facilisi. Donec at velit tristique, pellentesque elit dapibus, congue augue. Etiam efficitur rutrum dolor et fringilla. Donec augue massa, consequat non maximus eu, tincidunt sit amet nisi. Nullam accumsan libero vitae elit molestie facilisis. Nulla ipsum mi, tincidunt eget sodales sed, elementum vitae tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam in eros luctus, luctus ipsum sit amet, eleifend lectus. Sed convallis urna vel felis ullamcorper, eget auctor dui blandit. Quisque nisi purus, cursus vitae vestibulum eget, faucibus sit amet velit.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="post">
+				<div class="profile-container">
+					<img class="profile" src="resources/example_profile3.jpg">
+				</div>
+
+				<div class="post-content">
+					<p class="username">@bradkitt</p>
+
+					<div class="post-text">
+						<p>Wtf... I'll call an ambulance!</p>
 					</div>
 				</div>
 			</div>
