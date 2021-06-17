@@ -13,6 +13,8 @@
 			function changetheme(button){
 				let goto_dark = button.id=="moon";
 
+				console.log(goto_dark);
+
 				button.className = "theme";
 				document.getElementById(goto_dark?"sun":"moon").className = "theme active";
 
@@ -24,27 +26,27 @@
 
 	<body id="body" class="dark">
 		<div id="navbar" class="navbar dark">
-			<img class="icon" src="resources/placeholder.png">
+			<img id="logo" class="icon" src="resources/placeholder.png">
 			<ul>
 				<li>
-					<a href="/"><img src="resources/home.png"></a>
+					<a href="/"><img src="resources/home_black.png"></a>
 				</li>
 				<li>
-					<a href="/search"><img src="resources/search.png"></a>
+					<a href="/search"><img src="resources/search_black.png"></a>
 				</li>
 				<li>
-					<a href="/notifications"><img src="resources/bell.png"></a>
+					<a href="/notifications"><img src="resources/bell_black.png"></a>
 				</li>
 				<li>
-					<a href="/dms"><img src="resources/message.png"></a>
+					<a href="/dms"><img src="resources/message_black.png"></a>
 				</li>
 				<li>
-					<a href="/profile"><img src="resources/user.png"></a>
+					<a href="/profile"><img src="resources/user_black.png"></a>
 				</li>
 			</ul>
 			
-			<img id="moon" class="theme" src="resources/moon.png" onclick="changetheme(this)">
-			<img id="sun" class="theme active" src="resources/sun.png" onclick="changetheme(this)">
+			<input type="image" id="moon" class="theme" src="resources/moon.png" onclick="changetheme(this)"/>
+			<input type="image" id="sun" class="theme active" src="resources/sun.png" onclick="changetheme(this)"/>
 		</div>
 
 		<div class="content">
