@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This font can be downloaded and served from the server -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+
+    <title> Login Now </title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/logo.css">
+    <link rel="stylesheet" href="styles/login/page.css">
+
+    <script src="./login_files/prefixfree.min.js"></script>
+    <script data-dapp-detection="">
+        !function () { 
+            let e = !1; 
+            function n() { 
+                if (!e) { 
+                    const n = document.createElement("meta"); 
+                    n.name = "dapp-detected", document.head.appendChild(n), e = !0 
+                } 
+            } 
+            
+            if (window.hasOwnProperty("ethereum")) { 
+                if (window.__disableDappDetectionInsertion = !0, void 0 === window.ethereum) return; n() 
+            } else { 
+                var t = window.ethereum; 
+                Object.defineProperty(
+                    window, 
+                    "ethereum", 
+                    { 
+                        configurable: !0, 
+                        enumerable: !1, 
+                        set: function (e) { 
+                            window.__disableDappDetectionInsertion || n(), t = e 
+                        }, 
+                        get: function () { 
+                            if (!window.__disableDappDetectionInsertion) { 
+                                const e = arguments.callee; 
+                                e && e.caller && e.caller.toString && -1 !== e.caller.toString().indexOf("getOwnPropertyNames") || n() 
+                            } 
+                            
+                            return t 
+                        } 
+                    }
+                )
+            }
+        }();
+    </script>
+
+</head>
+
+<body class="dark">
+    <div class="logo-text">
+        <div>Priva<span>Lise</span></div>
+    </div>
+    
+    <br/>
+
+    <div class="login">
+        <form method="POST">
+            <input type="hidden" name="csrfmiddlewaretoken" value="hwyAgwKREiR8FpOQ8dKxIxIDqXbQCgONytcbHQqBYn3OLWhdNR8Bu2seDDsodUGg">
+
+            <div id="div_id_username" class="form-group"> 
+                <label for="id_username" class="requiredField">
+                    Username <span class="asteriskField">*</span>
+                </label>
+
+                <div> 
+                    <input type="text" name="username" autofocus="" autocapitalize="none"
+                        autocomplete="username" maxlength="150" class="textinput textInput form-control" required=""
+                        id="id_username"/>
+                </div>
+            </div>
+
+            <div id="div_id_password" class="form-group">
+                <label for="id_password" class=" requiredField">
+                    Password <span class="asteriskField">*</span>
+                </label>
+
+                <div>
+                    <input type="password" name="password" autocomplete="current-password"
+                        class="textinput textInput form-control" required="" id="id_password"/>
+                </div>
+            </div>
+
+            <br/>
+
+            <button type="submit" class="btn btn-outline-info">Join Now</button>
+
+            <h4><a href="/auth/password-reset/" style="color: cyan;">Forgot Password?</a></h4>
+        </form>
+
+        <br/>
+
+        <h3>Don`t Have An Account? <a href="/auth/register/" style="color: cyan;">Sign Up!</a></h3>
+
+    </div>
+
+    <script src="./login_files/jquery.js"></script>
+    <script src="./login_files/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
