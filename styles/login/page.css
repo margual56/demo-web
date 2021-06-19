@@ -1,5 +1,6 @@
 body {
 	background: linear-gradient(90deg, var(--dark-bg) 0%, var(--dark-bg3) 100%);
+	color: white;
 
 	width: 100vw;
 	height: 100vh;
@@ -74,15 +75,15 @@ main{
 	margin-bottom: 7px;
 }
 
-.form-inputs > * {transition: transform 200ms ease;}
-.form-inputs > *:hover{ transform: scale(1.1);}
+.form-inputs * {transition: transform 200ms ease;}
+.form-inputs input:hover, .form-inputs button:hover { transform: scale(1.1);}
 
 .form-inputs input:focus {
 	background-color: rgba(0,0,0, 0.4);
 	transform: scale(1.1);
 }
 
-.form-inputs button {
+button[type="submit"] {
 	width: 90%;
 	height: 3rem;
 
