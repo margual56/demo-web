@@ -1,4 +1,7 @@
 :root {
+	font-size: 16px;
+	font-family: 'Ubuntu';
+
 	--dark-bg: #020111;
 	--dark-bg2: #11111b;
 	--dark-fg: #ccc;
@@ -14,16 +17,8 @@ html, body {
 }
 
 body {
-	font-family: 'Ubuntu';
-	font-size: 1em;
-
 	background-color: var(--light-bg);
 	color: var(--light-fg);
-
-	display: flex;
-	flex-direction: row;
-
-	overflow: hidden;
 
 	-webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
 }

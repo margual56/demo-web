@@ -1,5 +1,9 @@
+<!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<!-- This font can be downloaded and served from the server -->
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
@@ -25,31 +29,57 @@
 	</head>
 
 	<body id="body" class="dark">
-		<div id="navbar" class="navbar dark">
-			<img id="logo" class="icon" src="resources/placeholder.png">
-			<ul>
-				<li>
-					<a href="/"><img src="resources/home_black.png"></a>
+		<nav id="navbar" class="navbar dark">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<img id="logo" class="icon" src="resources/placeholder.png">
 				</li>
-				<li>
-					<a href="/search"><img src="resources/search_black.png"></a>
+
+				<li class="nav-item">
+					<a href="/" class="nav-link">
+						<img src="resources/home_black.png" alt="Home link icon">
+						<span class="link-text">Home</span>
+					</a>
 				</li>
-				<li>
-					<a href="/notifications"><img src="resources/bell_black.png"></a>
+
+				<li class="nav-item">
+					<a href="/search" class="nav-link">
+						<img src="resources/search_black.png" alt="Search link icon">
+						<span class="link-text">Search</span>
+					</a>
 				</li>
-				<li>
-					<a href="/dms"><img src="resources/message_black.png"></a>
+
+				<li class="nav-item">
+					<a href="/notifications" class="nav-link">
+						<img src="resources/bell_black.png" alt="Notifications link icon">
+						<span class="link-text">Notifications</span>
+					</a>
 				</li>
-				<li>
-					<a href="/profile"><img src="resources/user_black.png"></a>
+
+				<li class="nav-item">
+					<a href="/dms" class="nav-link">
+						<img src="resources/message_black.png" alt="Messages link icon">
+						<span class="link-text">Messages</span>
+					</a>
+				</li>
+
+				<li class="nav-item">
+					<a href="/profile" class="nav-link">
+						<img src="resources/user_black.png" alt="Profile link icon"> 
+						<span class="link-text">Profile</span>
+					</a>
+				</li>
+
+				<li class="nav-item theme-selectors">
+					<input type="image" id="moon" class="theme" src="resources/moon.png" onclick="changetheme(this)"/>
+					<input type="image" id="sun" class="theme active" src="resources/sun.png" onclick="changetheme(this)"/>
 				</li>
 			</ul>
 			
-			<input type="image" id="moon" class="theme" src="resources/moon.png" onclick="changetheme(this)"/>
-			<input type="image" id="sun" class="theme active" src="resources/sun.png" onclick="changetheme(this)"/>
-		</div>
+			
+		</nav>
 
-		<div class="content">
+		<main class="content">
 			<div class="post">
 				<div class="profile-container">
 					<img class="profile" src="resources/example_profile.jpg">
@@ -108,6 +138,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	</body>
 </html>
