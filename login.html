@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- This font can be downloaded and served from the server -->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
+
+		<title> Login Now </title>
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/logo.css">
+		<link rel="stylesheet" href="styles/login/page.css">
+	</head>
+
+	<body class="dark">
+		<div class="logo-text">
+			<div>Priva<span>Lise</span></div>
+		</div>
+		
+		<br/>
+
+		<div class="login">
+			<h2 class="title">Log in to Privalise</h2>
+
+			<form method="POST" class="form-inputs">
+				<input type="hidden" name="csrfmiddlewaretoken" value="hwyAgwKREiR8FpOQ8dKxIxIDqXbQCgONytcbHQqBYn3OLWhdNR8Bu2seDDsodUGg">
+
+				<input id="id_username" class="textinput textInput form-control"
+				placeholder="Username"
+				type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" 
+				maxlength="150" required=""/>
+
+				<input id="id_password" class="textinput textInput form-control" 
+				placeholder="Password"
+				type="password" name="password" autocomplete="current-password" required="" />
+
+				<button type="submit" class="btn btn-outline-info">Log in now</button>
+			</form>
+
+			<div class="spacer" style="margin-top: 3rem; margin-bottom: 3rem;"></div>
+
+			<h4 style="margin-bottom: 1rem;"><a href="/auth/password-reset/" style="color: cyan;">Forgot Password?</a></h4>
+
+			<h3>Don`t Have An Account? <a href="/auth/register/" style="color: cyan;">Sign Up!</a></h3>
+
+		</div>
+	</body>
+</html>
