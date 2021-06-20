@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +13,7 @@
 		<link rel="stylesheet" href="styles/home/post.css">
 		<link rel="stylesheet" href="styles/home/scrollbar.css">
 
-		<script>
-			function changetheme(button){
-				let goto_dark = button.id=="moon";
-
-				console.log(goto_dark);
-
-				button.className = "theme";
-				document.getElementById(goto_dark?"sun":"moon").className = "theme active";
-
-				document.getElementById("body").className = goto_dark?"dark":"";
-				document.getElementById("navbar").className = "navbar " + (goto_dark?"dark":"");
-			}
-		</script>
+		<script src="scripts/theme.js"></script>
 	</head>
 
 	<body id="body" class="dark">
