@@ -6,10 +6,12 @@
 	--dark-bg2: #091220;
 	--dark-bg3: #132746;
 	--dark-fg: #ccc;
+	--dark-fg2: rgba(204, 204, 204, 0.575);
 
 	--light-bg: white;
 	--light-bg2: #ddd;
 	--light-fg: black;
+	--light-fg2: rgba(0, 0, 0, 0.432);
 }
 
 html, body {

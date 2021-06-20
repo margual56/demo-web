@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/logo.css">
 		<link rel="stylesheet" href="styles/home/navbar.css">
 		<link rel="stylesheet" href="styles/home/content.css">
 		<link rel="stylesheet" href="styles/home/post.css">
@@ -68,31 +69,64 @@
 		</nav>
 
 		<main class="content">
+			<div class="logo-text" style="margin-bottom: 1rem;">
+				<div>Priva<span>Lise</span></div>
+			</div>
+
 			<div class="post">
 				<div class="profile-container">
 					<img class="profile" src="resources/example_profile.jpg">
 				</div>
 
 				<div class="post-content">
-					<p class="username">@theawesomecat64</p>
+					<div class="post-info1">
+						<a class="username" href="/theawesomecat64">@theawesomecat64</a>
+						<p class="date">4h ago</p>
+					</div>
 
 					<div class="post-text">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in condimentum odio. Morbi rutrum velit non ex dapibus varius. Integer a eros ullamcorper nulla fermentum sodales. Vivamus non scelerisque lectus. Suspendisse eleifend ullamcorper elit ac ultricies. Integer nec eleifend purus. Cras viverra tincidunt lacus. Donec velit lacus, auctor at tempus ac, dapibus eu felis. Pellentesque iaculis leo quis suscipit dapibus. Integer pulvinar enim sed velit laoreet feugiat. Nullam condimentum condimentum ante quis molestie. Quisque quis tellus at risus fringilla congue at at mauris. Phasellus aliquam sit amet turpis eget rutrum. Phasellus elementum nisl in egestas porta. Duis hendrerit augue quis ligula hendrerit, in aliquam arcu fringilla.</p>
 						<p>Aliquam convallis dignissim sollicitudin. Donec accumsan elementum diam, eget sagittis diam condimentum sit amet. Vestibulum malesuada posuere eros sed porta. Nullam finibus, erat non luctus vestibulum, lacus leo ornare felis, vel vehicula nisi leo lobortis felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a ullamcorper dui, vitae pulvinar urna. Proin eget cursus libero. Curabitur egestas tellus turpis, eget scelerisque metus maximus lacinia.</p>
 					</div>
-				</div>
-			</div>
 
-			<div class="post">
-				<div class="profile-container">
-					<img class="profile" src="resources/example_profile3.jpg">
-				</div>
+					<div class="post reply">
+						<div class="profile-container">
+							<img class="profile" src="resources/example_profile3.jpg">
+						</div>
 
-				<div class="post-content">
-					<p class="username">@bradkitt</p>
+						<div class="post-content">
+							<div class="post-info">
+								<div class="post-info1">
+									<a class="username" href="/bradkitt">@bradkitt</a>
+									<p class="date">3h ago</p>
+								</div>
 
-					<div class="post-text">
-						<p>Dude... are u ok??</p>
+								<p class="info">Replying to <a class="username" href="/theawesomecat64">@theawesomecat64</a></p>
+							</div>
+							<div class="post-text">
+								<p>Dude... are u ok??</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="post reply">
+						<div class="profile-container">
+							<img class="profile" src="resources/example_profile3.jpg">
+						</div>
+
+						<div class="post-content">
+							<div class="post-info">
+								<div class="post-info1">
+									<a class="username" href="/bradkitt">@bradkitt</a>
+									<p class="date">3h ago</p>
+								</div>
+
+								<p class="info">Replying to <a class="username" href="/theawesomecat64">@theawesomecat64</a></p>
+							</div>
+							<div class="post-text">
+								<p>Dude... are u ok??</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -103,26 +137,36 @@
 				</div>
 
 				<div class="post-content">
-					<p class="username">@theawesomecat64</p>
+					<div class="post-info1">
+						<a class="username" href="/theawesomecat64">@theawesomecat64</a>
+						<p class="date">2h ago</p>
+					</div>
 
 					<div class="post-text">
 						<p>Cras molestie elit est, at interdum nulla fermentum maximus. Etiam in arcu egestas eros porttitor fringilla at in metus. Curabitur nec sollicitudin felis. Vivamus elit eros, rutrum eu lacus viverra, pulvinar volutpat nibh. Morbi dui felis, malesuada vel placerat vel, elementum a metus. Mauris rutrum accumsan laoreet. Duis ut velit porta, elementum nunc ut, molestie sapien. Pellentesque purus nisi, dignissim in luctus eget, tempus at diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eu viverra turpis. Proin eget sem felis. Donec quis sem vel odio posuere semper consequat at risus. Cras molestie tristique risus, in imperdiet ex tristique vel. Duis auctor, sapien et dictum vulputate, eros sem fringilla mi, et sagittis nulla mi congue magna. Suspendisse dictum risus lectus, eget tristique mi cursus sit amet.</p>
 
 						<p>Morbi mi tortor, tempor nec vehicula at, tincidunt ut ipsum. Nunc tempor, enim et consectetur placerat, purus lorem pellentesque metus, quis pharetra ex lectus quis purus. Donec finibus ut odio a varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc et blandit metus, non pharetra dolor. Sed eu fringilla sem. Nulla facilisi. Donec at velit tristique, pellentesque elit dapibus, congue augue. Etiam efficitur rutrum dolor et fringilla. Donec augue massa, consequat non maximus eu, tincidunt sit amet nisi. Nullam accumsan libero vitae elit molestie facilisis. Nulla ipsum mi, tincidunt eget sodales sed, elementum vitae tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam in eros luctus, luctus ipsum sit amet, eleifend lectus. Sed convallis urna vel felis ullamcorper, eget auctor dui blandit. Quisque nisi purus, cursus vitae vestibulum eget, faucibus sit amet velit.</p>
 					</div>
-				</div>
-			</div>
 
-			<div class="post">
-				<div class="profile-container">
-					<img class="profile" src="resources/example_profile3.jpg">
-				</div>
+					<div class="post reply">
+						<div class="profile-container">
+							<img class="profile" src="resources/example_profile3.jpg">
+						</div>
 
-				<div class="post-content">
-					<p class="username">@bradkitt</p>
+						<div class="post-content">
+							<div class="post-info">
+								<div class="post-info1">
+									<a class="username" href="/bradkitt">@bradkitt</a>
+									<p class="date">1h ago</p>
+								</div>
 
-					<div class="post-text">
-						<p>Wtf... I'll call an ambulance!</p>
+								<p class="info">Replying to <a class="username" href="/theawesomecat64">@theawesomecat64</a></p>
+							</div>
+
+							<div class="post-text">
+								<p>Wtf... I'll call an ambulance!</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
