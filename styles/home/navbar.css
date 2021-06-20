@@ -1,4 +1,6 @@
 nav.navbar {
+	box-sizing: border-box;
+
 	background-color: var(--light-bg2);
 	color: var(--light-fg2);
 
