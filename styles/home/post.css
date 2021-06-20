@@ -88,6 +88,14 @@ div.post > div.post-content > .post-text {
 
 .post-content a.username {
 	text-decoration: none;
+	color: rgb(57, 80, 87);
+}
+
+.post-content a.username:visited {
+	color: inherit;
+}
+
+body.dark .post-content a.username {
 	color: rgb(121, 168, 182);
 }
 

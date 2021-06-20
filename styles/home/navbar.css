@@ -11,12 +11,6 @@ nav.navbar {
 	left: 0;
 	overflow-x: hidden; /* Disable horizontal scroll */
 
-	border-style: solid;
-	border-left-width: 0;
-	border-top-width: 0;
-	border-bottom-width: 0;
-	border-color: gray;
-
 	transition: width 200ms ease;
 }
 
@@ -75,7 +69,13 @@ nav.navbar.dark .nav-link{
 	nav.navbar {
 		bottom: 0;
 		width: 100vw;
-		height: 5rem;
+		height: 4rem;
+
+		border-style: solid;
+		border-left-width: 0;
+		border-right-width: 0;
+		border-bottom-width: 0;
+		border-color: gray;
 	}
 
 	.navbar-nav {
@@ -108,6 +108,12 @@ nav.navbar.dark .nav-link{
 		top: 0;
 		width: 5rem;
 		height: 100vh;
+
+		border-style: solid;
+		border-left-width: 0;
+		border-top-width: 0;
+		border-bottom-width: 0;
+		border-color: gray;
 	}
 
 	nav.navbar .navbar-nav{
