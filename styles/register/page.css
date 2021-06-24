@@ -1,55 +1,118 @@
-.login {
-    width: 800px;
+body {
+	background: linear-gradient(90deg, var(--dark-bg) 0%, var(--dark-bg3) 100%);
 
-    display: unset;
+	width: 100vw;
+	height: 100vh;
+
+	overflow: hidden;
+}
+
+main{
+	height: 100%;
+
+	margin: auto;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.login {
+	width: 400px;
+}
+
+@media only screen and (max-width: 750px){ 
+	main {
+		flex-direction: column;
+	}
+
+	.logo-text {
+		margin-right: 0 !important;
+		margin-bottom: 4rem;
+	}
+
+	.login {
+		width: 90%;
+	}
+}
+
+.login > * {
+	margin: 0;
+}
+
+.login form {
+	width: 100%;
 }
 
 .form-inputs {
-    display: unset;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
-.login > div {
-    display: flex;
-    flex-direction: column;
+.login > .title {
+	width: 100%;
+	text-align: center;
 }
 
-input {
-    width: 350px;
-
-    margin-right: 2rem;
+.form-inputs input {
+	box-sizing: border-box;
+	width: 100%;
+	height: 2.3rem;
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-bottom: 7px;
 }
 
-ul {
-    list-style: circle;
+.form-inputs > * {transition: transform 200ms ease;}
+.form-inputs > *:hover{ transform: scale(1.1);}
+
+.form-inputs input:focus {
+	background-color: rgba(0,0,0, 0.4);
+	transform: scale(1.1);
 }
 
-li {
-    margin-bottom: 1rem;
+.form-inputs button {
+	width: 90%;
+	height: 3rem;
+
+	font-size: 1.3rem;
+
+	cursor: pointer;
+
+	border: 1px solid var(--light-bg);
+	border-radius: 25px;
+
+	color: var(--dark-fg);
+	background-image: linear-gradient(-90deg, var(--dark-bg) -100%, var(--dark-bg3) 100%);
+
+	margin: auto;
 }
 
-.multiple-inputs {
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+.login input[type=text]:focus {
+	outline: none;
+	border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
-.error {
-    color: red;
-    text-decoration: underline;
+.login input[type=password]:focus {
+	outline: none;
+	border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
-code {
-    background-color: rgba(255,255,255, 0.13);
-
-    padding: 2px;
-    padding-bottom: 1px;
-    margin: 2px;
-
-    border-radius: 2px;
+::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.6);
 }
 
-small {
-    font-size: 1rem;
+::-moz-input-placeholder {
+	color: rgba(255, 255, 255, 0.6);
 }
