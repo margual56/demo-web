@@ -108,11 +108,11 @@ body.dark .post-content .info{
 	margin-bottom: 0;
 	margin-top: 1rem;
 
-	border-bottom: solid rgb(44, 44, 44) 1px;
+	border-bottom: solid var(--light-post-separator) 1px;
 }
 
 .dark .post.reply {
-	border-bottom: solid rgb(95, 95, 95) 1px;
+	border-bottom: solid var(--dark-post-separator) 1px;
 }
 
 .post.reply:last-child {
@@ -163,6 +163,72 @@ body.dark .post-content .info{
 	transition: max-height 200ms ease;
 }
 
+/* SOCIAL BUTTONS (Like, dislike, share, etc) */
+
+.social_buttons {
+	width: 110%;
+	max-height: 3rem;
+
+	padding: 0.5rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	border-top: solid var(--light-post-separator) 1px;
+	border-bottom: solid var(--light-post-separator) 1px;
+
+	transform: translate(-50px, 0);
+}
+
+.dark .social_buttons {
+	border-top: solid var(--dark-post-separator) 1px;
+	border-bottom: solid var(--dark-post-separator) 1px;
+}
+
+.social_buttons > .like-dislike > div {
+
+	transition: all 200ms ease;
+}
+
+.social_buttons > .like-dislike { /* The container of the svg and the text*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.social_buttons > .like-dislike > p {
+	margin: 0 0.5rem;
+}
+
+.social_buttons svg {
+	max-width: 1.5rem;
+	max-height: 1.5rem;
+}
+
+.social_buttons svg path {
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 10px;
+	stroke:#999;
+
+	transition: fill 200ms ease, stroke 200ms ease;
+}
+
+.social_buttons .active svg path{
+	stroke: none;
+}
+
+.social_buttons .like.active svg path{
+	fill: red;
+}
+
+.social_buttons .dislike.active svg path{
+	fill: black;
+}
+
+
 @media only screen and (min-width: 600px) { /* Computers or tablets */
 	.accordion_button:hover {
 		cursor: pointer;
@@ -176,4 +242,38 @@ body.dark .post-content .info{
 	.accordion_button.active:hover::before {
 		transform: rotate(180deg) scale(2);
 	}
+
+	.social_buttons {
+		width: 100%;
+	}
+	.social_buttons > .like-dislike > div {
+		width: 35px;
+		height: 35px;
+	
+		border-radius: 50%;
+	}
+	
+	.social_buttons > .like-dislike > div > svg {
+		margin: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.social_buttons > .like-dislike > div {
+		cursor: pointer;
+	}
+
+	.social_buttons .like:hover{
+		background-color: rgba(255, 0, 0, 0.2);
+	}
+	.social_buttons .like:hover svg path {
+		stroke: rgb(206, 48, 48);
+	}
+
+	.social_buttons .dislike:hover{
+		background-color: rgb(168, 168, 168);
+	}
+	.social_buttons .dislike:hover svg path {
+		stroke: rgb(29, 29, 29);
+	}
 }
+
