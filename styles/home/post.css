@@ -186,8 +186,16 @@ body.dark .post-content .info{
 	border-bottom: solid var(--dark-post-separator) 1px;
 }
 
-.social_buttons > .like-dislike > div {
+.social_buttons button {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 5px 0;
 
+	color: inherit;
+}
+
+.social_buttons > .like-dislike > button {
 	transition: all 200ms ease;
 }
 
@@ -211,9 +219,13 @@ body.dark .post-content .info{
 	stroke-linecap: round;
 	stroke-linejoin: round;
 	stroke-width: 10px;
-	stroke:#999;
+	stroke: var(--light-fg2);
 
 	transition: fill 200ms ease, stroke 200ms ease;
+}
+
+.dark .social_buttons svg path {
+	stroke: var(--dark-fg2);
 }
 
 .social_buttons .active svg path{
@@ -246,19 +258,19 @@ body.dark .post-content .info{
 	.social_buttons {
 		width: 100%;
 	}
-	.social_buttons > .like-dislike > div {
+	.social_buttons > .like-dislike > button {
 		width: 35px;
 		height: 35px;
 	
 		border-radius: 50%;
 	}
 	
-	.social_buttons > .like-dislike > div > svg {
+	.social_buttons > .like-dislike > button > svg {
 		margin: 50%;
 		transform: translate(-50%, -50%);
 	}
 
-	.social_buttons > .like-dislike > div {
+	.social_buttons button:hover {
 		cursor: pointer;
 	}
 
