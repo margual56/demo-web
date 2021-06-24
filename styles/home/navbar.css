@@ -140,9 +140,9 @@ nav.navbar.dark .nav-link{
 		transition: padding 200ms ease;
 	}
 
-	nav.navbar:hover .theme-selectors {
+	/*nav.navbar:hover .theme-selectors {
 		padding-left: 70%;
-	}
+	}*/
 
 	nav.navbar:hover .link-text {
 		display: block;
