@@ -8,6 +8,7 @@
 	--dark-post-bg: #1e252e;
 	--dark-fg: rgb(221, 221, 221);
 	--dark-fg2: rgba(204, 204, 204, 0.575);
+	--dark-post-separator: rgb(95, 95, 95);
 
 
 	--light-bg: white;
@@ -15,6 +16,7 @@
 	--light-post-bg: #ddd;
 	--light-fg: black;
 	--light-fg2: rgba(0, 0, 0, 0.432);
+	--light-post-separator: rgb(44, 44, 44);
 }
 
 html, body {

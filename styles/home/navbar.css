@@ -71,7 +71,7 @@ nav.navbar.dark .nav-link{
 	nav.navbar {
 		bottom: 0;
 		width: 100vw;
-		height: 4rem;
+		height: 3rem;
 
 		border-style: solid;
 		border-left-width: 0;
@@ -83,6 +83,8 @@ nav.navbar.dark .nav-link{
 	.navbar-nav {
 		align-items: center;
 		flex-direction: row;
+
+		padding: 0.2rem 0;
 	}
 
 	.nav-link {
@@ -96,7 +98,7 @@ nav.navbar.dark .nav-link{
 
 
 	nav.navbar img, nav.navbar input {
-		max-width: 2rem;
+		max-width: 1.5rem;
 		max-height: auto;
 	}
 	
