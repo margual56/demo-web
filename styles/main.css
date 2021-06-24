@@ -5,11 +5,14 @@
 	--dark-bg: #080d14;
 	--dark-bg2: #091220;
 	--dark-bg3: #132746;
-	--dark-fg: #ccc;
+	--dark-post-bg: #1e252e;
+	--dark-fg: rgb(221, 221, 221);
 	--dark-fg2: rgba(204, 204, 204, 0.575);
+
 
 	--light-bg: white;
 	--light-bg2: #ddd;
+	--light-post-bg: #ddd;
 	--light-fg: black;
 	--light-fg2: rgba(0, 0, 0, 0.432);
 }
