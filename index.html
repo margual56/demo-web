@@ -90,10 +90,9 @@
 						<p>Aliquam convallis dignissim sollicitudin. Donec accumsan elementum diam, eget sagittis diam condimentum sit amet. Vestibulum malesuada posuere eros sed porta. Nullam finibus, erat non luctus vestibulum, lacus leo ornare felis, vel vehicula nisi leo lobortis felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a ullamcorper dui, vitae pulvinar urna. Proin eget cursus libero. Curabitur egestas tellus turpis, eget scelerisque metus maximus lacinia.</p>
 					</div>
 
-<<<<<<< Updated upstream
-=======
 					<div class="social_buttons">
 						<button class="social_button share">SHARE</button>
+						<button class="social_button other">other?</button>
 
 						<div class="like-dislike">
 							<button class="social_button like">
@@ -118,9 +117,9 @@
 						</div>
 
 						<button class="social_button reply">REPLY</button>
+						<button class="social_button reprivalise">RE-VALISE</button>
 					</div>
 
->>>>>>> Stashed changes
 					<div class="reply_accordion">
 						<button class="accordion_button" type="button">
 							Show replies
@@ -235,6 +234,20 @@
 
 				});
 			});
+
+			document.querySelectorAll(".social_button").forEach(button => {
+				button.addEventListener('click', () => {
+					button.classList.toggle('active');
+
+					if(button.classList.contains('like')){
+						button.nextElementSibling.nextElementSibling.classList.remove('active');
+					}else if(button.classList.contains('dislike')){
+						button.previousElementSibling.previousElementSibling.classList.remove('active');
+					}
+				});
+			});
 		</script>
+
+		
 	</body>
 </html>
