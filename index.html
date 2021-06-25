@@ -238,9 +238,28 @@
 					button.classList.toggle('active');
 
 					if(button.classList.contains('like')){
-						button.nextElementSibling.nextElementSibling.classList.remove('active');
+						let likesElem = button.nextElementSibling;
+						let likes = parseInt(likesElem.textContent) + (button.classList.contains("active")?+1:-1);
+
+						let dislikeButton = button.nextElementSibling.nextElementSibling;
+						if(dislikeButton.classList.contains("active")){
+							likes += 1;
+							dislikeButton.classList.remove('active');
+						}
+
+						likesElem.textContent = '+' + likes;
+						
 					}else if(button.classList.contains('dislike')){
-						button.previousElementSibling.previousElementSibling.classList.remove('active');
+						let likesElem = button.previousElementSibling;
+						let likes = parseInt(likesElem.textContent) + (button.classList.contains("active")?-1:+1);
+
+						let likeButton = button.previousElementSibling.previousElementSibling;
+						if(likeButton.classList.contains("active")){
+							likes -= 1;
+							likeButton.classList.remove('active');
+						}
+						
+						likesElem.textContent = '+' + likes;
 					}
 				});
 			});
