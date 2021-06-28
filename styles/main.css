@@ -1,6 +1,5 @@
 :root {
 	font-size: 16px;
-	font-family: 'Ubuntu';
 
 	--dark-bg: #080d14;
 	--dark-bg2: #091220;
@@ -19,12 +18,16 @@
 	--light-post-separator: rgb(44, 44, 44);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
 html, body {
 	margin: 0;
 	padding: 0;
 }
 
 body {
+	font-family: 'Ubuntu', sans-serif;
+
 	background-color: var(--light-bg);
 	color: var(--light-fg);
 
