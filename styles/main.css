@@ -5,15 +5,15 @@
 	--dark-bg2: #091220;
 	--dark-bg3: #132746;
 	--dark-post-bg: #1e252e;
-	--dark-fg: rgb(221, 221, 221);
+	--dark-fg: #bbb;
 	--dark-fg2: rgba(204, 204, 204, 0.575);
 	--dark-post-separator: rgb(95, 95, 95);
 
 
-	--light-bg: white;
+	--light-bg: #bbb;
 	--light-bg2: #ddd;
-	--light-post-bg: #ddd;
-	--light-fg: black;
+	--light-post-bg: #ccc;
+	--light-fg: #333;
 	--light-fg2: rgba(0, 0, 0, 0.432);
 	--light-post-separator: rgb(44, 44, 44);
 }
@@ -23,6 +23,8 @@
 html, body {
 	margin: 0;
 	padding: 0;
+
+	overflow: hidden;
 }
 
 body {
@@ -37,4 +39,8 @@ body {
 body.dark{
 	background-color: var(--dark-bg);
 	color: var(--dark-fg);
+}
+
+.blurry {
+	filter: blur(5px);
 }
