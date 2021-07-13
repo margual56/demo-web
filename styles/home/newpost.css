@@ -62,8 +62,13 @@
 
 	transform: translate(-50%, -50%);
 }
+
 .new-post-form:not(.pc):not(.active) {
 	display: none !important;
+}
+
+.new-post-form .post-content {
+	width: calc(100% - 3em) !important;
 }
 
 .new-post-form .username {
