@@ -66,6 +66,9 @@
 	display: none !important;
 }
 
+.new-post-form .post-content {
+	width: calc(100% - 3em) !important;
+}
 .new-post-form .username {
 	color: var(--dark-username) !important;
 }
@@ -125,8 +128,13 @@
 	content: '';
 	height: 2em;
 	width: 2px;
+	background-color: #ccc;
+}
+
+.dark .cross:before, .dark .cross:after {
 	background-color: #333;
 }
+
 .cross:before {
 	transform: rotate(45deg);
 }
