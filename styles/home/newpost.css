@@ -109,4 +109,7 @@
 }
 
 @media only screen and (min-width: 600px) { /* Computers or tablets */
+	.new-post-button {
+		display: none !important;
+	}
 }
