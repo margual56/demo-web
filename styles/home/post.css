@@ -82,7 +82,15 @@ div.post > .post-content > .post-text {
 	width: 95%;
 }
 
-.post-content a.username {
+.post .post-info1 .date {
+	color: var(--light-fg2);
+}
+
+.dark .post .post-info1 .date {
+	color: var(--dark-fg2);
+}
+
+a.username {
 	text-decoration: none;
 	color: var(--light-username);
 }
@@ -249,12 +257,14 @@ body.dark .post-content .info{
 		transform: scale(1.3);
 	}
 
-	div.post > .profile-container > img.profile {
-		/*width*/
-	}
 }
 
 @media only screen and (min-width: 600px) { /* Computers or tablets */
+	div.post .profile-container {
+		width: 3.5em;
+		height: 3.5em;
+	}
+	
 	.accordion_button:hover {
 		cursor: pointer;
 		text-decoration: underline;
