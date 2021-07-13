@@ -13,12 +13,20 @@
 
 /* Track */
 *::-webkit-scrollbar-track {
-  background: var(--dark-bg2); 
+  background: var(--light-bg2); 
 }
-  
+
+.dark *::-webkit-scrollbar-track{
+	background: var(--dark-bg2); 
+}
+
 /* Handle */
 *::-webkit-scrollbar-thumb {
-  background: var(--light-bg2); 
+  background: var(--dark-bg2); 
+}
+
+.dark *::-webkit-scrollbar-thumb {
+	background: var(--light-bg2); 
 }
 
 /* Handle on hover */

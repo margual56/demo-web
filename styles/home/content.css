@@ -18,21 +18,22 @@ main.content {
 
 @media only screen and (max-width: 600px) {
 	main.content {
-		padding: 1rem;
-		padding-bottom: 3rem;
-		margin-bottom: 30rem;
-		
-		top: 3rem;
+		padding: 1em;
+		padding-bottom: 3em;
 
-		font-size: 0.95rem;
+		height: calc(100vh - 3em);
+		
+		top: 3em;
+
+		font-size: 0.95em;
 	}
 }
 
 
 @media only screen and (min-width: 600px) {
 	main.content {
-		padding-top: 2rem;
-		padding-left: 6rem;
-		padding-right: 6rem;
+		padding-top: 2em;
+		padding-left: 6em;
+		padding-right: 6em;
 	}
 }

@@ -1,5 +1,5 @@
 main {
-	padding: 2rem;
+	padding: 2em;
 
 	display: flex;
 	flex-direction: column;
@@ -11,8 +11,8 @@ main {
 	align-items: center;
 	justify-content: center;
 
-	margin-bottom: 3rem;
-	padding-bottom: 3rem;
+	margin-bottom: 3em;
+	padding-bottom: 3em;
 
 	border-bottom: solid grey 2px;
 }
@@ -26,7 +26,7 @@ main {
 
 	border-radius: 50%;
 
-	margin-right: 2rem;
+	margin-right: 2em;
 }
 
 .picture-container > img.profile-picture {
