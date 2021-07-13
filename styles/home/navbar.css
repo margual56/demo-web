@@ -28,7 +28,7 @@ nav.navbar.dark img:not([id]) {
 .navbar-nav {
 	list-style: none;
 	margin: 0;
-	padding: 1rem;
+	padding: 1em;
 
 	display: flex;
 	justify-content: space-evenly;
@@ -38,7 +38,7 @@ nav.navbar.dark img:not([id]) {
 }
 
 .nav-item {
-	padding: 1rem;
+	padding: 1em;
 	padding-top: 0;
 	padding-bottom: 0;
 }
@@ -57,7 +57,7 @@ nav.navbar.dark img:not([id]) {
 .nav-link{
 	display: flex;
 	align-items: center;
-	height: 5rem;
+	height: 5em;
 
 	color: var(--light-fg);
 	text-decoration: none;
@@ -71,7 +71,7 @@ nav.navbar.dark .nav-link{
 	nav.navbar {
 		bottom: 0;
 		width: 100vw;
-		height: 3rem;
+		height: 3em;
 
 		border-style: solid;
 		border-left-width: 0;
@@ -84,12 +84,12 @@ nav.navbar.dark .nav-link{
 		align-items: center;
 		flex-direction: row;
 
-		padding: 0.2rem 0;
+		padding: 0.2em 0;
 	}
 
 	.nav-link {
 		justify-content: center;
-		max-height: 2rem;
+		max-height: 2em;
 	}
 
 	nav.navbar .nav-item:first-child {
@@ -98,7 +98,7 @@ nav.navbar.dark .nav-link{
 
 
 	nav.navbar img, nav.navbar input {
-		max-width: 1.5rem;
+		max-width: 1.5em;
 		max-height: auto;
 	}
 	
@@ -110,7 +110,7 @@ nav.navbar.dark .nav-link{
 @media only screen and (min-width: 600px) {
 	nav.navbar {
 		top: 0;
-		width: 5rem;
+		width: 5em;
 		height: 100vh;
 
 		border-style: solid;
@@ -126,12 +126,12 @@ nav.navbar.dark .nav-link{
 	}
 
 	nav.navbar img, nav.navbar input {
-		max-width: 2.5rem;
+		max-width: 2.5em;
 		max-height: auto;
 	}
 	
 	nav.navbar:hover {
-		width: 16rem;
+		width: 16em;
 	}
 
 	nav.navbar:hover .nav-item {
@@ -151,12 +151,12 @@ nav.navbar.dark .nav-link{
 	}
 
 	.link-text {
-		margin-left: 1rem;
+		margin-left: 1em;
 	}
 
 	.nav-item:first-child {
 		padding-top: 0;
-		margin-bottom: 2rem;
+		margin-bottom: 2em;
 	}
 	
 	.nav-item:last-child{

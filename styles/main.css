@@ -6,16 +6,18 @@
 	--dark-bg3: #132746;
 	--dark-post-bg: #1e252e;
 	--dark-fg: #bbb;
-	--dark-fg2: rgba(204, 204, 204, 0.575);
-	--dark-post-separator: rgb(95, 95, 95);
+	--dark-fg2: #cccccc93;
+	--dark-post-separator: #5f5f5f;
+	--dark-username: #79a8b6;
 
 
-	--light-bg: #bbb;
+	--light-bg: #cfcfcf;
 	--light-bg2: #ddd;
-	--light-post-bg: #ccc;
+	--light-post-bg: #e7e7e7;
 	--light-fg: #333;
-	--light-fg2: rgba(0, 0, 0, 0.432);
-	--light-post-separator: rgb(44, 44, 44);
+	--light-fg2: #0000006e;
+	--light-post-separator: #2c2c2c;
+	--light-username: #395057;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');

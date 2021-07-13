@@ -9,7 +9,7 @@ div.post {
 
 	width: 100%;
 	max-width: 60ch;
-	padding: 1rem;
+	padding: 1em;
 
 	display: flex;
 	align-items: flex-start;
@@ -46,7 +46,7 @@ div.post > .profile-container > img.profile {
 	object-fit: cover;
 }
 
-div.post > div.post-content {
+div.post > .post-content {
 	flex: 1 1;
 
 	display: flex;
@@ -72,16 +72,16 @@ div.post > div.post-content {
 }
 
 .post-content .post-info1 > *:first-child {
-	margin-right: 1rem;
+	margin-right: 1em;
 }
 
-div.post > div.post-content > .post-text {
+div.post > .post-content > .post-text {
 	width: 95%;
 }
 
 .post-content a.username {
 	text-decoration: none;
-	color: rgb(57, 80, 87);
+	color: var(--light-username);
 }
 
 .post-content a.username:visited {
@@ -89,7 +89,7 @@ div.post > div.post-content > .post-text {
 }
 
 body.dark .post-content a.username {
-	color: rgb(121, 168, 182);
+	color: var(--dark-username);
 }
 
 .post-content .info {
@@ -106,7 +106,7 @@ body.dark .post-content .info{
 	border-radius: 0;
 
 	margin-bottom: 0;
-	margin-top: 1rem;
+	margin-top: 1em;
 
 	border-bottom: solid var(--light-post-separator) 1px;
 }
@@ -124,7 +124,7 @@ body.dark .post-content .info{
 .reply_accordion {
 	width: 100%;
 
-	margin-top: 2rem;
+	margin-top: 2em;
 }
 
 .accordion_button {
@@ -143,7 +143,7 @@ body.dark .post-content .info{
 	float: left;
 	transform: scale(1.5);
 
-	margin-right: 1.2rem;
+	margin-right: 1.2em;
 
 	transition: transform 200ms ease-out;
 }
@@ -167,9 +167,9 @@ body.dark .post-content .info{
 
 .social_buttons {
 	width: 110%;
-	max-height: 3rem;
+	max-height: 3em;
 
-	padding: 0.5rem;
+	padding: 0.5em;
 
 	display: flex;
 	flex-direction: row;
@@ -206,12 +206,12 @@ body.dark .post-content .info{
 }
 
 .social_buttons > .like-dislike > p {
-	margin: 0 0.5rem;
+	margin: 0 0.5em;
 }
 
 .social_buttons svg {
-	max-width: 1.5rem;
-	max-height: 1.5rem;
+	max-width: 1.5em;
+	max-height: 1.5em;
 }
 
 .social_buttons svg path {
@@ -238,51 +238,6 @@ body.dark .post-content .info{
 
 .social_buttons .dislike.active svg path{
 	fill: black;
-}
-
-/* NEW POST STYLE */
-.new-post-button {
-	border: 2px solid var(--dark-fg);
-	background-color: var(--dark-bg2);
-	font-size: 16px;
-	height: 2.5em;
-	width: 2.5em;
-	border-radius: 50%;
-
-	position: fixed;
-	bottom: 3.5rem;
-	left: .5rem;
-
-	transition: all 200ms ease;
-}
-
-.new-post-button:hover {
-	cursor: pointer;
-	transform: rotate(-90deg) scale(1.4);
-}
-
-.new-post-button:after,
-.new-post-button:before {
-	content: "";
-	display: block;
-
-	background-color: var(--dark-fg);
-	border-radius: 1rem;
-
-	position: absolute;
-	top: 50%;
-	left: 50%;
-
-	transform: translate(-50%, -50%);
-}
-
-.new-post-button:before {
-	height: 1em;
-	width: 0.2em;
-}
-.new-post-button:after {
-	height: 0.2em;
-	width: 1em;
 }
 
 /* MEDIA QUERIES (Phone/PC) */
@@ -338,15 +293,4 @@ body.dark .post-content .info{
 	.social_buttons .dislike:hover svg path {
 		stroke: rgb(29, 29, 29);
 	}
-
-	.new-post-button {
-		font-size: 15px;
-
-		position: fixed;
-		bottom: 10rem;
-		left: 1rem;
-
-		z-index: 2;
-	}
 }
-
