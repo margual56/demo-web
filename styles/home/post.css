@@ -270,6 +270,8 @@ body.dark .post-content .info{
 
 	.social_buttons {
 		width: 100%;
+
+		transform: translateX(-6%);
 	}
 	.social_buttons > .like-dislike > button {
 		width: 35px;
