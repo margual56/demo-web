@@ -44,13 +44,6 @@
 				</li>
 
 				<li class="nav-item">
-					<a href="/dms" class="nav-link">
-						<img src="resources/message_black.png" alt="Messages link icon">
-						<span class="link-text">Messages</span>
-					</a>
-				</li>
-
-				<li class="nav-item">
 					<a href="/profile" class="nav-link">
 						<img src="resources/user_black.png" alt="Profile link icon"> 
 						<span class="link-text">Profile</span>
@@ -182,6 +175,34 @@
 						<p>Morbi mi tortor, tempor nec vehicula at, tincidunt ut ipsum. Nunc tempor, enim et consectetur placerat, purus lorem pellentesque metus, quis pharetra ex lectus quis purus. Donec finibus ut odio a varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc et blandit metus, non pharetra dolor. Sed eu fringilla sem. Nulla facilisi. Donec at velit tristique, pellentesque elit dapibus, congue augue. Etiam efficitur rutrum dolor et fringilla. Donec augue massa, consequat non maximus eu, tincidunt sit amet nisi. Nullam accumsan libero vitae elit molestie facilisis. Nulla ipsum mi, tincidunt eget sodales sed, elementum vitae tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam in eros luctus, luctus ipsum sit amet, eleifend lectus. Sed convallis urna vel felis ullamcorper, eget auctor dui blandit. Quisque nisi purus, cursus vitae vestibulum eget, faucibus sit amet velit.</p>
 					</div>
 
+					<div class="social_buttons">
+						<button class="social_button share">SHARE</button>
+
+						<div class="like-dislike">
+							<button class="social_button like">
+								<svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100">
+									<g id="layer1" transform="translate(55 65)">
+										<path id="path2622" d="m25.45-41.897c-8.8052-9.6393-23.081-9.6393-31.887 2e-6l-0.00511 0.0055-0.00511-0.0055c-8.8052-9.6392-23.081-9.6393-31.887 0-8.8052 9.6393-8.8052 25.268 0 34.907l0.0051 0.00546 31.887 34.907 31.887-34.907 5e-3 -0.00546c8.8052-9.6393 8.8052-25.268 1e-6 -34.907z"/>
+									</g>
+								</svg>
+							</button>
+
+							<p class="count">
+								+200
+							</p>
+							
+							<button class="social_button dislike">
+								<svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100">
+									<g id="layer1" transform="translate(160 65)">
+										<path id="rect846" d="m-122.78-51.621c-5.7704-3e-6 -11.541 2.4087-15.943 7.2264-8.8053 9.6352-8.8053 25.257 0 34.892l5e-3 0.0053 31.887 34.892 31.887-34.892 0.0048-0.0053c8.8053-9.6352 8.8053-25.257 0-34.892-6.9312-7.5845-17.251-9.197-25.626-4.841l2.9122 22.877-7.7802-1.0558 4.4557 35.002-15.744-40.725 9.7086 1.3175-6.8862-17.812c-2.8289-1.325-5.8545-1.9887-8.8807-1.9887z"/>
+									</g>
+								</svg>
+							</button>
+						</div>
+
+						<button class="social_button reply">REPLY</button>
+					</div>
+					
 					<div class="reply_accordion">
 						<button class="accordion_button" type="button">
 							Show replies
@@ -214,6 +235,9 @@
 			</div>
 		</main>
 
+		<section class="new-post">
+			<button class="new-post-button" type="button"></button>
+		</section>
 		
 		<script>
 			document.querySelectorAll(".accordion_button").forEach(button => {
