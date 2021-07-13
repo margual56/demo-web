@@ -5,12 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<link rel="stylesheet" href="styles/main.css">
-		<link rel="stylesheet" href="styles/logo.css">
-		<link rel="stylesheet" href="styles/home/navbar.css">
-		<link rel="stylesheet" href="styles/home/content.css">
 		<link rel="stylesheet" href="styles/home/post.css">
-		<link rel="stylesheet" href="styles/home/scrollbar.css">
-		<link rel="stylesheet" href="styles/home/newpost.css">
+
+		<!-- Async CSS loading (optimization) -->
+		<link rel="preload" href="styles/logo.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="styles/logo.css"></noscript>
+		<link rel="preload" href="styles/home/newpost.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="styles/home/newpost.css"></noscript>
+		<link rel="preload" href="styles/home/scrollbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="styles/home/scrollbar.css"></noscript>
+		<link rel="preload" href="styles/home/content.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="styles/home/content.css"></noscript>
+		<link rel="preload" href="styles/home/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript><link rel="stylesheet" href="styles/home/navbar.css"></noscript>
 
 		<script src="scripts/theme.js"></script>
 		<script src="scripts/newpost.js"></script>
@@ -65,6 +72,8 @@
 			<div class="profile-container">
 				<img class="profile" src="resources/example_profile3.jpg">
 			</div>
+
+			<button class="cross" type="button" onclick="hideNewpost()"></button>
 
 			<form class="post-content">
 				<div class="post-info">
@@ -274,7 +283,7 @@
 		</main>
 
 		<section class="new-post">
-			<button class="new-post-button" type="button" onclick="newpost(this)"></button>
+			<button id="new-post-button" class="new-post-button" type="button" onclick="newpost(this)"></button>
 		</section>
 		
 		<script>

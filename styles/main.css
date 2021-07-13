@@ -20,8 +20,6 @@
 	--light-username: #395057;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
 html, body {
 	margin: 0;
 	padding: 0;
@@ -30,7 +28,7 @@ html, body {
 }
 
 body {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: sans-serif;
 
 	background-color: var(--light-bg);
 	color: var(--light-fg);
