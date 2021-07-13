@@ -13,7 +13,7 @@ div.post {
 
 	display: flex;
 	align-items: flex-start;
-	flex-direction: row;
+	flex-direction: column;
 
 	transition: background-color 0.2s;
 }
@@ -26,7 +26,18 @@ body.dark div.post{
 	background-color: var(--dark-post-bg);
 }
 
-div.post > .profile-container {
+div.post .post-info0 {
+	display: flex;
+	flex-direction: row;
+
+	align-items: center;
+	justify-content: center;
+
+	margin-left: 0.5em;
+	margin-bottom: 1em;
+}
+
+div.post .profile-container {
 	width: 2.5em;
 	height: 2.5em;
 
@@ -36,9 +47,11 @@ div.post > .profile-container {
 	overflow: hidden;
 
 	border-radius: 50%;
+
+	margin-right: 1em;
 }
 
-div.post > .profile-container > img.profile {
+div.post .profile-container > img.profile {
 	margin: auto;
 
 	display: inline;
@@ -48,6 +61,7 @@ div.post > .profile-container > img.profile {
 	object-fit: cover;
 }
 
+
 div.post > .post-content {
 	display: flex;
 	align-items: flex-start;
@@ -56,7 +70,7 @@ div.post > .post-content {
 	margin-left: 1em;
 
 	width: fit-content;
-	max-width: calc(100% - 4em);
+	max-width: 100%;
 }
 
 .post-content > .post-info {
@@ -82,16 +96,16 @@ div.post > .post-content > .post-text {
 	width: 95%;
 }
 
-.post-content a.username {
+a.username {
 	text-decoration: none;
 	color: var(--light-username);
 }
 
-.post-content a.username:visited {
+a.username:visited {
 	color: inherit;
 }
 
-body.dark .post-content a.username {
+body.dark a.username {
 	color: var(--dark-username);
 }
 
@@ -169,8 +183,8 @@ body.dark .post-content .info{
 /* SOCIAL BUTTONS (Like, dislike, share, etc) */
 
 .social_buttons {
-	width: 110%;
-	max-height: 3em;
+	width: 96%;
+	height: 1.5em;
 
 	padding: 0.5em;
 
@@ -181,7 +195,7 @@ body.dark .post-content .info{
 	border-top: solid var(--light-post-separator) 1px;
 	border-bottom: solid var(--light-post-separator) 1px;
 
-	transform: translate(-50px, 0);
+	transform: translateX(-3%);
 }
 
 .dark .social_buttons {
