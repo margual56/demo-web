@@ -103,6 +103,30 @@
 	background-color: var(--light-bg2);
 }
 
+.new-post-form button[type="submit"] {
+	margin: auto;
+	margin-top: 1em;
+
+	font-size: 1rem;
+	padding: .5em;
+
+	width: 60%;
+
+	border-radius: 0.75em;
+	border: none;
+	box-shadow: 0 3px 9px 0px #000000;
+
+	color: var(--dark-fg);
+	background-color: var(--dark-post-bg);
+}
+
+.dark .new-post-form button[type="submit"] {
+	color: var(--light-fg);
+	background-color: var(--light-post-bg);
+
+	box-shadow: 0 3px 9px 0px #555;
+}
+
 /* CROSS BUTTON */
 .cross {
 	position: absolute;
