@@ -7,10 +7,14 @@
 
 .logo-text div {
     float: left;
-    color: #fff;
-    font-family: 'Exo', sans-serif;
+    color: #535f6b;
+    font-family: 'Exo', sans-serif !important;
     font-size: 35px;
     font-weight: 200;
+}
+
+.dark .logo-text div {
+    color: white;
 }
 
 .logo-text div span {

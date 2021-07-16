@@ -1,23 +1,35 @@
 :root {
 	font-size: 16px;
-	font-family: 'Ubuntu';
 
 	--dark-bg: #080d14;
 	--dark-bg2: #091220;
 	--dark-bg3: #132746;
-	--dark-fg: #ccc;
+	--dark-post-bg: #1e252e;
+	--dark-fg: #bbb;
+	--dark-fg2: #cccccc93;
+	--dark-post-separator: #5f5f5f;
+	--dark-username: #79a8b6;
 
-	--light-bg: white;
+
+	--light-bg: #cfcfcf;
 	--light-bg2: #ddd;
-	--light-fg: black;
+	--light-post-bg: #e7e7e7;
+	--light-fg: #333;
+	--light-fg2: #0000006e;
+	--light-post-separator: #2c2c2c;
+	--light-username: #395057;
 }
 
 html, body {
 	margin: 0;
 	padding: 0;
+
+	overflow: hidden;
 }
 
 body {
+	font-family: sans-serif;
+
 	background-color: var(--light-bg);
 	color: var(--light-fg);
 
@@ -27,4 +39,8 @@ body {
 body.dark{
 	background-color: var(--dark-bg);
 	color: var(--dark-fg);
+}
+
+.blurry {
+	filter: blur(5px);
 }

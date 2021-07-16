@@ -1,38 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<!-- This font can be downloaded and served from the server -->
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+		<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 
 		<link rel="stylesheet" href="styles/main.css">
-		<link rel="stylesheet" href="styles/home/navbar.css">
-		<link rel="stylesheet" href="styles/home/content.css">
 		<link rel="stylesheet" href="styles/home/post.css">
+		<link rel="stylesheet" href="styles/logo.css">
+		<link rel="stylesheet" href="styles/home/newpost.css">
 		<link rel="stylesheet" href="styles/home/scrollbar.css">
+		<link rel="stylesheet" href="styles/home/content.css">
+		<link rel="stylesheet" href="styles/home/navbar.css">
 
-		<script>
-			function changetheme(button){
-				let goto_dark = button.id=="moon";
+		<script src="scripts/theme.js"></script>
+		<script src="scripts/newpost.js"></script>
 
-				console.log(goto_dark);
-
-				button.className = "theme";
-				document.getElementById(goto_dark?"sun":"moon").className = "theme active";
-
-				document.getElementById("body").className = goto_dark?"dark":"";
-				document.getElementById("navbar").className = "navbar " + (goto_dark?"dark":"");
-			}
-		</script>
 	</head>
 
-	<body id="body" class="dark">
+	<body id="body" class="dark" onload="loadtheme()">
 		<nav id="navbar" class="navbar dark">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<img id="logo" class="icon" src="resources/placeholder.png">
+					<img id="logo" class="icon" src="resources/privalise_logo.png" style="border-radius: 0.5em;">
 				</li>
 
 				<li class="nav-item">
@@ -57,13 +47,6 @@
 				</li>
 
 				<li class="nav-item">
-					<a href="/dms" class="nav-link">
-						<img src="resources/message_black.png" alt="Messages link icon">
-						<span class="link-text">Messages</span>
-					</a>
-				</li>
-
-				<li class="nav-item">
 					<a href="/profile" class="nav-link">
 						<img src="resources/user_black.png" alt="Profile link icon"> 
 						<span class="link-text">Profile</span>
@@ -79,65 +62,302 @@
 			
 		</nav>
 
-		<main class="content">
-			<div class="post">
-				<div class="profile-container">
-					<img class="profile" src="resources/example_profile.jpg">
-				</div>
-
-				<div class="post-content">
-					<p class="username">@theawesomecat64</p>
-
-					<div class="post-text">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in condimentum odio. Morbi rutrum velit non ex dapibus varius. Integer a eros ullamcorper nulla fermentum sodales. Vivamus non scelerisque lectus. Suspendisse eleifend ullamcorper elit ac ultricies. Integer nec eleifend purus. Cras viverra tincidunt lacus. Donec velit lacus, auctor at tempus ac, dapibus eu felis. Pellentesque iaculis leo quis suscipit dapibus. Integer pulvinar enim sed velit laoreet feugiat. Nullam condimentum condimentum ante quis molestie. Quisque quis tellus at risus fringilla congue at at mauris. Phasellus aliquam sit amet turpis eget rutrum. Phasellus elementum nisl in egestas porta. Duis hendrerit augue quis ligula hendrerit, in aliquam arcu fringilla.</p>
-						<p>Aliquam convallis dignissim sollicitudin. Donec accumsan elementum diam, eget sagittis diam condimentum sit amet. Vestibulum malesuada posuere eros sed porta. Nullam finibus, erat non luctus vestibulum, lacus leo ornare felis, vel vehicula nisi leo lobortis felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a ullamcorper dui, vitae pulvinar urna. Proin eget cursus libero. Curabitur egestas tellus turpis, eget scelerisque metus maximus lacinia.</p>
-					</div>
-				</div>
+		<div class="post new-post-form">
+			<div class="profile-container">
+				<img class="profile" src="resources/example_profile3.jpg">
 			</div>
 
-			<div class="post">
+			<button class="cross" type="button" onclick="hideNewpost()"></button>
+
+			<form class="post-content">
+				<div class="post-info">
+					<div class="post-info1">
+						<a class="username" href="/bradkitt">@bradkitt</a>
+					</div>
+				</div>
+
+				<textarea class="new-post-text" autocomplete="false" placeholder="Share your thoughts!" ></textarea>
+
+				<button type="submit">Post</button>
+			</form>
+		</div>
+
+		<main class="content">
+			<div class="logo-text" style="margin-bottom: 1em;">
+				<div>Priva<span>Lise</span></div>
+			</div>
+
+			<div class="post new-post-form pc">
 				<div class="profile-container">
 					<img class="profile" src="resources/example_profile3.jpg">
 				</div>
 
+				<form class="post-content">
+					<div class="post-info">
+						<div class="post-info1">
+							<a class="username" href="/bradkitt">@bradkitt</a>
+						</div>
+					</div>
+
+					<textarea class="new-post-text" autocomplete="false" placeholder="Share your thoughts!" ></textarea>
+
+					<button type="submit">Post</button>
+				</form>
+			</div>
+
+			<div class="post">
+				<div class="post-info0">
+					<div class="profile-container">
+						<img class="profile" src="resources/example_profile.jpg">
+					</div>
+					
+					<a class="username" href="/theawesomecat64">@theawesomecat64</a>
+				</div>
+
 				<div class="post-content">
-					<p class="username">@bradkitt</p>
+					<div class="post-info1">
+						<p class="date">4h ago</p>
+					</div>
 
 					<div class="post-text">
-						<p>Dude... are u ok??</p>
+						<p>Loem ipsum dolor sit amet, consectetur adipiscing elit. Ut in condimentum odio. Morbi rutrum velit non ex dapibus varius. Integer a eros ullamcorper nulla fermentum sodales. Vivamus non scelerisque lectus. Suspendisse eleifend ullamcorper elit ac ultricies. Integer nec eleifend purus. Cras viverra tincidunt lacus. Donec velit lacus, auctor at tempus ac, dapibus eu felis. Pellentesque iaculis leo quis suscipit dapibus. Integer pulvinar enim sed velit laoreet feugiat. Nullam condimentum condimentum ante quis molestie. Quisque quis tellus at risus fringilla congue at at mauris. Phasellus aliquam sit amet turpis eget rutrum. Phasellus elementum nisl in egestas porta. Duis hendrerit augue quis ligula hendrerit, in aliquam arcu fringilla.</p>
+						<p>Aliquam convallis dignissim sollicitudin. Donec accumsan elementum diam, eget sagittis diam condimentum sit amet. Vestibulum malesuada posuere eros sed porta. Nullam finibus, erat non luctus vestibulum, lacus leo ornare felis, vel vehicula nisi leo lobortis felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras a ullamcorper dui, vitae pulvinar urna. Proin eget cursus libero. Curabitur egestas tellus turpis, eget scelerisque metus maximus lacinia.</p>
+					</div>
+
+					<div class="social_buttons">
+						<button class="social_button share">SHARE</button>
+
+						<div class="like-dislike">
+							<button class="social_button like">
+								<svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100">
+									<g id="layer1" transform="translate(55 65)">
+										<path id="path2622" d="m25.45-41.897c-8.8052-9.6393-23.081-9.6393-31.887 2e-6l-0.00511 0.0055-0.00511-0.0055c-8.8052-9.6392-23.081-9.6393-31.887 0-8.8052 9.6393-8.8052 25.268 0 34.907l0.0051 0.00546 31.887 34.907 31.887-34.907 5e-3 -0.00546c8.8052-9.6393 8.8052-25.268 1e-6 -34.907z"/>
+									</g>
+								</svg>
+							</button>
+
+							<p class="count">
+								+200
+							</p>
+							
+							<button class="social_button dislike">
+								<svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100">
+									<g id="layer1" transform="translate(160 65)">
+										<path id="rect846" d="m-122.78-51.621c-5.7704-3e-6 -11.541 2.4087-15.943 7.2264-8.8053 9.6352-8.8053 25.257 0 34.892l5e-3 0.0053 31.887 34.892 31.887-34.892 0.0048-0.0053c8.8053-9.6352 8.8053-25.257 0-34.892-6.9312-7.5845-17.251-9.197-25.626-4.841l2.9122 22.877-7.7802-1.0558 4.4557 35.002-15.744-40.725 9.7086 1.3175-6.8862-17.812c-2.8289-1.325-5.8545-1.9887-8.8807-1.9887z"/>
+									</g>
+								</svg>
+							</button>
+						</div>
+
+						<button class="social_button reply">REPLY</button>
+					</div>
+
+					<div class="reply_accordion">
+						<button class="accordion_button" type="button">
+							Show replies
+						</button>
+
+						<div class="replies">
+							<div class="post reply">
+								<div class="post-info0">
+									<div class="profile-container">
+										<img class="profile" src="resources/example_profile3.jpg">
+									</div>
+									
+									<a class="username" href="/bradkitt">@bradkitt</a>
+								</div>
+
+								<div class="post-content">
+									<div class="post-info">
+										<div class="post-info1">
+											<p class="date">3h ago</p>
+										</div>
+
+										<p class="info">Replying to <a class="username" href="/theawesomecat64">@theawesomecat64</a></p>
+									</div>
+									<div class="post-text">
+										<p>Dude... are u ok??</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="post reply">
+								<div class="post-info0">
+									<div class="profile-container">
+										<img class="profile" src="resources/example_profile3.jpg">
+									</div>
+									
+									<a class="username" href="/bradkitt">@bradkitt</a>
+								</div>
+		
+								<div class="post-content">
+									<div class="post-info">
+										<div class="post-info1">
+											<p class="date">3h ago</p>
+										</div>
+		
+										<p class="info">Replying to <a class="username" href="/theawesomecat64">@theawesomecat64</a></p>
+									</div>
+									<div class="post-text">
+										<p>Dude... are u ok??</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			
 			<div class="post">
-				<div class="profile-container">
-					<img class="profile" src="resources/example_profile.jpg">
+				
+				<div class="post-info0">
+					<div class="profile-container">
+						<img class="profile" src="resources/example_profile.jpg">
+					</div>
+					
+					<a class="username" href="/theawesomecat64">@theawesomecat64</a>
 				</div>
 
 				<div class="post-content">
-					<p class="username">@theawesomecat64</p>
+					<div class="post-info1">
+						<p class="date">2h ago</p>
+					</div>
 
 					<div class="post-text">
 						<p>Cras molestie elit est, at interdum nulla fermentum maximus. Etiam in arcu egestas eros porttitor fringilla at in metus. Curabitur nec sollicitudin felis. Vivamus elit eros, rutrum eu lacus viverra, pulvinar volutpat nibh. Morbi dui felis, malesuada vel placerat vel, elementum a metus. Mauris rutrum accumsan laoreet. Duis ut velit porta, elementum nunc ut, molestie sapien. Pellentesque purus nisi, dignissim in luctus eget, tempus at diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eu viverra turpis. Proin eget sem felis. Donec quis sem vel odio posuere semper consequat at risus. Cras molestie tristique risus, in imperdiet ex tristique vel. Duis auctor, sapien et dictum vulputate, eros sem fringilla mi, et sagittis nulla mi congue magna. Suspendisse dictum risus lectus, eget tristique mi cursus sit amet.</p>
 
-						<p>Morbi mi tortor, tempor nec vehicula at, tincidunt ut ipsum. Nunc tempor, enim et consectetur placerat, purus lorem pellentesque metus, quis pharetra ex lectus quis purus. Donec finibus ut odio a varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc et blandit metus, non pharetra dolor. Sed eu fringilla sem. Nulla facilisi. Donec at velit tristique, pellentesque elit dapibus, congue augue. Etiam efficitur rutrum dolor et fringilla. Donec augue massa, consequat non maximus eu, tincidunt sit amet nisi. Nullam accumsan libero vitae elit molestie facilisis. Nulla ipsum mi, tincidunt eget sodales sed, elementum vitae tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam in eros luctus, luctus ipsum sit amet, eleifend lectus. Sed convallis urna vel felis ullamcorper, eget auctor dui blandit. Quisque nisi purus, cursus vitae vestibulum eget, faucibus sit amet velit.</p>
+						<p>Morbi mi tortor, tempor nec vehicula at, tincidunt ut ipsum. Nunc tempor, enim et consectetur placerat, purus loem pellentesque metus, quis pharetra ex lectus quis purus. Donec finibus ut odio a varius. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nunc et blandit metus, non pharetra dolor. Sed eu fringilla sem. Nulla facilisi. Donec at velit tristique, pellentesque elit dapibus, congue augue. Etiam efficitur rutrum dolor et fringilla. Donec augue massa, consequat non maximus eu, tincidunt sit amet nisi. Nullam accumsan libero vitae elit molestie facilisis. Nulla ipsum mi, tincidunt eget sodales sed, elementum vitae tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam in eros luctus, luctus ipsum sit amet, eleifend lectus. Sed convallis urna vel felis ullamcorper, eget auctor dui blandit. Quisque nisi purus, cursus vitae vestibulum eget, faucibus sit amet velit.</p>
 					</div>
-				</div>
-			</div>
 
-			<div class="post">
-				<div class="profile-container">
-					<img class="profile" src="resources/example_profile3.jpg">
-				</div>
+					<div class="social_buttons">
+						<button class="social_button share">SHARE</button>
 
-				<div class="post-content">
-					<p class="username">@bradkitt</p>
+						<div class="like-dislike">
+							<button class="social_button like">
+								<svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100">
+									<g id="layer1" transform="translate(55 65)">
+										<path id="path2622" d="m25.45-41.897c-8.8052-9.6393-23.081-9.6393-31.887 2e-6l-0.00511 0.0055-0.00511-0.0055c-8.8052-9.6392-23.081-9.6393-31.887 0-8.8052 9.6393-8.8052 25.268 0 34.907l0.0051 0.00546 31.887 34.907 31.887-34.907 5e-3 -0.00546c8.8052-9.6393 8.8052-25.268 1e-6 -34.907z"/>
+									</g>
+								</svg>
+							</button>
 
-					<div class="post-text">
-						<p>Wtf... I'll call an ambulance!</p>
+							<p class="count">
+								+163
+							</p>
+							
+							<button class="social_button dislike">
+								<svg width="100px" height="100px" version="1.1" viewBox="0 0 100 100">
+									<g id="layer1" transform="translate(160 65)">
+										<path id="rect846" d="m-122.78-51.621c-5.7704-3e-6 -11.541 2.4087-15.943 7.2264-8.8053 9.6352-8.8053 25.257 0 34.892l5e-3 0.0053 31.887 34.892 31.887-34.892 0.0048-0.0053c8.8053-9.6352 8.8053-25.257 0-34.892-6.9312-7.5845-17.251-9.197-25.626-4.841l2.9122 22.877-7.7802-1.0558 4.4557 35.002-15.744-40.725 9.7086 1.3175-6.8862-17.812c-2.8289-1.325-5.8545-1.9887-8.8807-1.9887z"/>
+									</g>
+								</svg>
+							</button>
+						</div>
+
+						<button class="social_button reply">REPLY</button>
+					</div>
+					
+					<div class="reply_accordion">
+						<button class="accordion_button" type="button">
+							Show replies
+						</button>
+
+						<div class="replies">
+							<div class="post reply">
+								
+								<div class="post-info0">
+									<div class="profile-container">
+										<img class="profile" src="resources/example_profile3.jpg">
+									</div>
+									
+									<a class="username" href="/bradkitt">@bradkitt</a>
+								</div>
+
+								<div class="post-content">
+									<div class="post-info">
+										<div class="post-info1">
+											<p class="date">1h ago</p>
+										</div>
+
+										<p class="info">Replying to <a class="username" href="/theawesomecat64">@theawesomecat64</a></p>
+									</div>
+
+									<div class="post-text">
+										<p>Wtf... I'll call an ambulance!</p>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</main>
+
+		<section class="new-post">
+			<button id="new-post-button" class="new-post-button" type="button" onclick="newpost(this)"></button>
+		</section>
+		
+		<script>
+			document.querySelectorAll(".accordion_button").forEach(button => {
+				button.addEventListener('click', () => {
+					const accordionContent = button.nextElementSibling; // the "replies" div
+
+					button.classList.toggle('active');
+
+					if(button.classList.contains('active'))
+						accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+					else
+						accordionContent.style.maxHeight = 0;
+
+				});
+			});
+
+			document.querySelectorAll(".social_button").forEach(button => {
+				button.addEventListener('click', () => {
+					button.classList.toggle('active');
+
+					if(button.classList.contains('like')){
+						let likesElem = button.nextElementSibling;
+						let likes = parseInt(likesElem.textContent) + (button.classList.contains("active")?+1:-1);
+
+						let dislikeButton = button.nextElementSibling.nextElementSibling;
+						if(dislikeButton.classList.contains("active")){
+							likes += 1;
+							dislikeButton.classList.remove('active');
+						}
+
+						likesElem.textContent = '+' + likes;
+						
+					}else if(button.classList.contains('dislike')){
+						let likesElem = button.previousElementSibling;
+						let likes = parseInt(likesElem.textContent) + (button.classList.contains("active")?-1:+1);
+
+						let likeButton = button.previousElementSibling.previousElementSibling;
+						if(likeButton.classList.contains("active")){
+							likes -= 1;
+							likeButton.classList.remove('active');
+						}
+						
+						likesElem.textContent = '+' + likes;
+					}
+				});
+			});
+
+			document.querySelectorAll('.new-post-text').forEach(textarea => {
+				textarea.addEventListener('keydown', function() {
+						var el = this;
+
+						setTimeout(function(){
+							el.style.cssText = 'height:auto; padding:0';
+							// for box-sizing other than "content-box" use:
+							// el.style.cssText = '-moz-box-sizing:content-box';
+							el.style.cssText = 'height:' + el.scrollHeight + 'px';
+						},0);
+					}
+				)
+			});
+		</script>
+
+		
 	</body>
 </html>

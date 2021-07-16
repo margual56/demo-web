@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
    sodipodi:docname="bell.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -24,12 +24,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.4142136"
-     inkscape:cx="382.19121"
-     inkscape:cy="667.86234"
+     inkscape:cx="389.61583"
+     inkscape:cy="637.8103"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -39,8 +39,8 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g2784"
-       inkscape:export-filename="C:\Users\Marcos\Desktop\demo\resources\bell.png"
+       id="g849"
+       inkscape:export-filename="/home/marcos/GitHub/demo-web/resources/bell_black.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96">
       <rect
@@ -50,19 +50,15 @@
          height="66.145836"
          x="82.646423"
          y="126.47195" />
-      <g
-         id="g2602"
-         transform="matrix(3.483285,0,0,3.483285,-206.51356,-310.105)">
-        <path
-           id="path1727"
-           style="fill:#ffffff;stroke:#ffffff;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-           d="m 92.52355,141.11415 a 1.9059753,1.9059753 0 0 0 1.902211,1.80971 1.9059753,1.9059753 0 0 0 1.902724,-1.80971 z" />
-        <path
-           id="path846"
-           style="fill:none;stroke:#ffffff;stroke-width:1.17538;stroke-linecap:round;stroke-linejoin:round"
-           d="m 92.508341,126.66152 c -3.511595,0.002 -6.423097,2.74751 -6.614589,6.25388 v 0 7.96489 h 13.229166 c 0,-2.65497 0,-5.30993 0,-7.96489 v 0 c -0.191555,-3.50757 -3.1018,-6.25362 -6.614593,-6.25388 z"
-           sodipodi:nodetypes="ccccccccc" />
-      </g>
+      <path
+         id="path1727"
+         style="fill:none;stroke:#000000;stroke-width:1.85208333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 115.77233,180.64104 a 6.6390552,6.6390552 0 0 0 6.62595,6.30374 6.6390552,6.6390552 0 0 0 6.62773,-6.30374 z" />
+      <path
+         id="path846"
+         style="fill:none;stroke:#000000;stroke-width:1.85208333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 115.71936,131.09317 c -12.23189,0.007 -22.373481,9.57036 -23.040502,21.78405 v 0 27.74398 h 46.080952 c 0,-9.24802 0,-18.496 0,-27.74398 v 0 c -0.66724,-12.21787 -10.80445,-21.78314 -23.04051,-21.78405 z"
+         sodipodi:nodetypes="ccccccccc" />
     </g>
   </g>
 </svg>

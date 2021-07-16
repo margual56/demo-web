@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
    sodipodi:docname="search.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,13 +23,13 @@
      inkscape:pagecheckerboard="1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.6654321"
-     inkscape:cx="228.66836"
-     inkscape:cy="549.0667"
+     inkscape:zoom="1.3327161"
+     inkscape:cx="228.85595"
+     inkscape:cy="568.01297"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -39,32 +39,28 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g1257"
-       inkscape:export-filename="C:\Users\Marcos\Desktop\demo\resources\search.png"
+       id="g874"
+       inkscape:export-filename="/home/marcos/GitHub/demo-web/resources/search_black.png"
        inkscape:export-xdpi="240.89999"
        inkscape:export-ydpi="240.89999">
       <rect
-         style="fill:none;stroke:none;stroke-width:2.11667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         style="fill:none;stroke:none;stroke-width:5.31154;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
          id="rect1127"
-         width="26.359371"
-         height="26.359371"
+         width="66.145836"
+         height="66.145836"
          x="58.628685"
-         y="136.0304"
-         ry="2.7494054" />
-      <g
-         id="g1233">
-        <circle
-           style="fill:none;stroke-width:2.11666667;stroke-linecap:round;stroke-linejoin:round;stroke:#ffffff;stroke-miterlimit:4;stroke-dasharray:none"
-           id="path846"
-           cx="74.944855"
-           cy="146.51469"
-           r="7.8419118" />
-        <path
-           id="rect1002"
-           style="fill:none;stroke:#ffffff;stroke-width:5.00004;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
-           d="M 257.49805 568.4043 L 230.36133 594.31836 C 227.80703 596.75743 227.71877 600.77056 230.16406 603.31836 C 232.60935 605.86616 236.63515 605.9547 239.18945 603.51562 L 266.04883 577.86719 A 29.638722 29.638722 0 0 1 257.49805 568.4043 z "
-           transform="scale(0.26458333)" />
-      </g>
+         y="95.172646"
+         ry="6.8993187" />
+      <circle
+         style="fill:none;stroke:#000000;stroke-width:1.85208333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         id="path846"
+         cx="99.57225"
+         cy="121.4818"
+         r="19.678383" />
+      <path
+         id="rect1002"
+         style="fill:none;stroke:#000000;stroke-width:1.85208333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+         d="m 82.470376,131.20719 -18.017199,17.20542 c -1.695905,1.61941 -1.754507,4.2839 -0.130964,5.97547 1.62353,1.69161 4.296427,1.75038 5.992333,0.131 l 17.833059,-17.02905 a 19.678382,19.678382 0 0 1 -5.677216,-6.28282 z" />
     </g>
   </g>
 </svg>

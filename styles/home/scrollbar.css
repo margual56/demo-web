@@ -1,20 +1,35 @@
 /* width */
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
 	width: 10px;
   z-index: 1;
 }
 
-/* Track */
-body::-webkit-scrollbar-track {
-  background: var(--dark-bg2); 
+
+@media only screen and (max-width: 600px) {
+	*::-webkit-scrollbar {
+		width: 2px;
+	}
 }
-  
-/* Handle */
-body::-webkit-scrollbar-thumb {
+
+/* Track */
+*::-webkit-scrollbar-track {
   background: var(--light-bg2); 
 }
 
+.dark *::-webkit-scrollbar-track{
+	background: var(--dark-bg2); 
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: var(--dark-bg2); 
+}
+
+.dark *::-webkit-scrollbar-thumb {
+	background: var(--light-bg2); 
+}
+
 /* Handle on hover */
-body::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
