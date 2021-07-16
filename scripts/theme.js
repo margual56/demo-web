@@ -15,7 +15,7 @@ function changetheme(button){
 function loadtheme(){
 	if(window.localStorage.getItem("darktheme") === null)
 		return;
-
+  
 	let goto_dark = window.localStorage.getItem("darktheme")==="true";
 	
 	console.log("Loaded that you want the " + (goto_dark?"dark":"light") + " theme!");
