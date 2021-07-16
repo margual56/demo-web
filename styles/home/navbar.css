@@ -4,16 +4,14 @@ nav.navbar {
 	background-color: var(--light-bg2);
 	color: var(--light-fg2);
 
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-
 	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
 	z-index: 2; /* Stay on top */
 	left: 0;
 	overflow: hidden; /* Disable horizontal scroll */
 
 	transition: width 200ms ease;
+
+	max-height: 100%;
 }
 
 nav.navbar.dark {
@@ -26,9 +24,11 @@ nav.navbar.dark img:not([id]) {
 }
 
 .navbar-nav {
+	box-sizing: border-box;
 	list-style: none;
 	margin: 0;
 	padding: 1em;
+	padding-inline: 0;
 
 	display: flex;
 	justify-content: space-evenly;
@@ -118,6 +118,8 @@ nav.navbar.dark .nav-link{
 		border-top-width: 0;
 		border-bottom-width: 0;
 		border-color: gray;
+
+		overflow-y: scroll;
 	}
 
 	nav.navbar .navbar-nav{

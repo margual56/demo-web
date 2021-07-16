@@ -2,22 +2,16 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="stylesheet" href="styles/home/post.css">
-
-		<!-- Async CSS loading (optimization) -->
-		<link rel="preload" href="styles/logo.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="styles/logo.css"></noscript>
-		<link rel="preload" href="styles/home/newpost.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="styles/home/newpost.css"></noscript>
-		<link rel="preload" href="styles/home/scrollbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="styles/home/scrollbar.css"></noscript>
-		<link rel="preload" href="styles/home/content.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="styles/home/content.css"></noscript>
-		<link rel="preload" href="styles/home/navbar.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript><link rel="stylesheet" href="styles/home/navbar.css"></noscript>
+		<link rel="stylesheet" href="styles/logo.css">
+		<link rel="stylesheet" href="styles/home/newpost.css">
+		<link rel="stylesheet" href="styles/home/scrollbar.css">
+		<link rel="stylesheet" href="styles/home/content.css">
+		<link rel="stylesheet" href="styles/home/navbar.css">
 
 		<script src="scripts/theme.js"></script>
 		<script src="scripts/newpost.js"></script>
@@ -28,7 +22,7 @@
 		<nav id="navbar" class="navbar dark">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<img id="logo" class="icon" src="resources/placeholder.png">
+					<img id="logo" class="icon" src="resources/privalise_logo.png" style="border-radius: 0.5em;">
 				</li>
 
 				<li class="nav-item">
