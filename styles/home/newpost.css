@@ -48,8 +48,6 @@
 
 	color: var(--dark-fg) !important;
 	background-color: var(--dark-post-bg) !important;
-
-	z-index: 2;
 }
 .new-post-form:not(.pc) {
 	display: flex;
@@ -61,6 +59,8 @@
 	width: 90%;
 
 	transform: translate(-50%, -50%);
+
+	z-index: 2;
 }
 .new-post-form:not(.pc):not(.active) {
 	display: none !important;
